@@ -1,0 +1,105 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+input{
+  text-align: center;
+}
+.button{
+  display: inline;
+  margin-left: 0.5%;
+}
+button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #db1227;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  color: black;
+  font-size: 25px;
+}
+.button:hover .fa-a{
+  color: #db1227;
+  transition: 1.5s;
+  transform: rotateY(-180deg);
+}
+button:hover{ 
+animation: pulse 1s infinite;
+animation-timing-function: linear;   
+}
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.1);}
+100% { transform: scale(1); }
+}
+.dex{
+  background-image: url(../img/pokedex.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 540px;
+}
+.sprite{
+  display: block;
+  margin: 0 auto;
+  transform: translate(25%, 80%);
+  height: 115px;
+}
+h2{
+  transform: translate(635%, 610%);
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #db1227;
+  width: 130px;
+}
+h3{
+  transform: translate(-.5%, 1580%) skew(-5deg, 0deg);
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #316931;
+}
+.display{
+  margin-top: 1%;
+}
+.dex{
+  float: left;
+  width: 75%;
+}
+.gifs{
+  float: left;
+  width: 25%;
+}
+.gifs img{
+  width: 250px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* @media screen and (max-width: 980px){
+  h3{
+    transform: translate(450%, 675%);
+  }
+  h2{
+    transform: translate(-21%, 1680%) skew(-5deg, 0deg);
+  }
+} */
